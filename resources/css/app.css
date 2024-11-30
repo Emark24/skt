@@ -1,0 +1,27 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import "~flatpickr/dist/flatpickr.min.css";
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Custom styles */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}

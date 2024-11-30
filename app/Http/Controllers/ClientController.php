@@ -6,13 +6,25 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
-    public function list() {
-        // Dėl šio darbo pirmos dalies grąžiname statinę informaciją
+    public function index()
+    {
         $conferences = [
-            ['title' => 'Conference 1', 'date' => '2023-10-01'],
-            ['title' => 'Conference 2', 'date' => '2023-10-10'],
+            ['id' => 1, 'title' => 'Tech Conference 2024', 'date' => '2024-11-01'],
+            ['id' => 2, 'title' => 'Science Symposium', 'date' => '2024-12-05'],
         ];
+
         return view('client.conferences.index', compact('conferences'));
     }
-    
+
+    public function show($id)
+    {
+        $conference = [
+            'id' => $id,
+            'title' => 'Tech Conference 2024',
+            'description' => 'An exciting event about technology and innovation.',
+            'date' => '2024-11-01',
+        ];
+
+        return view('client.conferences.show', compact('conferences'));
+    }
 }
