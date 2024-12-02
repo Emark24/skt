@@ -6,7 +6,7 @@
 
     <form action="{{ route('admin.conferences.update', $conference->id) }}" method="POST">
         @csrf
-        @method('PUT') <!-- Šis metodas naudojamas, kad nurodytume, jog tai yra atnaujinimo užklausa -->
+        @method('PUT')
 
         <div class="form-group">
             <label for="title">{{ __('messages.title') }}</label>

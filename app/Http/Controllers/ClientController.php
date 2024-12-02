@@ -25,6 +25,11 @@ class ClientController extends Controller
             'date' => '2024-11-01',
         ];
 
-        return view('client.conferences.show', compact('conferences'));
+        return view('client.conferences.show', compact('conference'));
+    }
+
+    public function register($id)
+    {
+        return redirect()->route('client.conferences')->with('success', 'You have successfully registered for the conference!');
     }
 }

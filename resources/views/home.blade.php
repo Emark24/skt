@@ -14,8 +14,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ route('client.conferences') }}">{{ __('messages.client_section') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('employee.conferences') }}">{{ __('messages.employee_section') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('admin.dashboard') }}">{{ __('messages.admin_section') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('employee.conferences.index') }}">{{ __('messages.employee_section') }}</a></li>
+                    <li class="nav-link"><a href="{{ route('admin.index') }}">{{ __('messages.admin_section') }}</a><li>
                 </ul>
             </div>
         </div>
@@ -32,8 +32,8 @@
         <div class="row mt-4">
             <div class="col text-center">
                 <a href="{{ route('client.conferences') }}" class="btn btn-primary">{{ __('messages.client_section') }}</a>
-                <a href="{{ route('employee.conferences') }}" class="btn btn-secondary">{{ __('messages.employee_section') }}</a>
-                <a href="{{ route('admin.dashboard') }}" class="btn btn-danger">{{ __('messages.admin_section') }}</a>
+                <a href="{{ route('employee.conferences.index') }}" class="btn btn-secondary">{{ __('messages.employee_section') }}</a>
+                <a href="{{ route('admin.index') }}" class="btn btn-danger">{{ __('messages.admin_section') }}</a>
             </div>
         </div>
     </div>

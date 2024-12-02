@@ -8,12 +8,17 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="#">Logout</a>
+        <!-- Home Button -->
+        <a href="{{ route('home') }}" class="btn btn-primary">Home</a>
+
+        <!-- Logout Button (Assuming it triggers logout functionality) -->
+        <a href="{{ route('logout') }}" class="btn btn-danger">Logout</a>
     </nav>
+    
     <main>
         @yield('content')
     </main>
+
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

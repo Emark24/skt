@@ -8,8 +8,8 @@ class MainController extends Controller
 {
     public function index() {
         return view('home', [
-            'name' => 'Student Name',
-            'group' => 'Your Group',
+            'name' => 'Emilis Markevičius',
+            'group' => 'VVK',
         ]);
     }
     
